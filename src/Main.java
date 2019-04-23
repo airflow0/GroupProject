@@ -13,7 +13,10 @@ public class Main
 
         for( Student s : students)
         {
-            System.out.println("Name: " + s.getName() + ", ID: " + s.getStudentID());
+            System.out.println("Name: " + s.getName() + ", ID: " + s.getId());
         }
+        Student k = grade.getStudentByName("Freddie Catlay");
+        Student j = grade.getStudentByName("Christine Schaeffer");
+        Student e = grade.getStudentByID("1234501");
     }
 }

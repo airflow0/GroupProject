@@ -6,7 +6,10 @@ public class Student
     private int studentID;
     private int studentAttendance;
 
+    public Student()
+    {
 
+    }
     public Student(String name, int id)
     {
         this.studentName = name;
@@ -28,11 +31,15 @@ public class Student
     {
         return this.studentID;
     }
+    public String getId()
+    {
+        return Integer.toString(this.studentID);
+    }
     public void setStudentAttendance( int attendance)
     {
         this.studentAttendance = attendance;
     }
-    public int getStudentAttendance( )
+    public int getAttendance( )
     {
         return this.studentAttendance;
     }
